@@ -7,13 +7,14 @@
   <style>
     body {
       margin: 0;
+      padding: 0;
       font-family: Arial, sans-serif;
-      color: white;
       background: black;
+      color: white;
       overflow-x: hidden;
     }
 
-    /* background image */
+    /* Tarot background */
     .bg {
       position: fixed;
       top: 0;
@@ -21,11 +22,12 @@
       width: 100%;
       height: 100%;
       background: url("tarot.jpg") center center / cover no-repeat;
-      opacity: 0.25;
+      opacity: 0.22;
+      filter: grayscale(100%) contrast(120%);
       z-index: -1;
-      filter: contrast(120%) grayscale(100%);
     }
 
+    /* Center hero */
     .hero {
       height: 100vh;
       display: flex;
@@ -33,18 +35,20 @@
       justify-content: center;
       align-items: center;
       text-align: center;
+      padding: 20px;
     }
 
     h1 {
       font-size: 90px;
-      letter-spacing: 14px;
+      letter-spacing: 12px;
       margin: 0;
     }
 
-    p {
-      font-size: 16px;
+    .sub {
+      margin-top: 15px;
+      font-size: 14px;
+      letter-spacing: 4px;
       opacity: 0.7;
-      letter-spacing: 3px;
     }
 
     .section {
@@ -52,18 +56,20 @@
       text-align: center;
     }
 
-    .manifesto {
-      max-width: 600px;
+    .text {
+      max-width: 700px;
       margin: auto;
       line-height: 1.8;
       opacity: 0.85;
+      font-size: 16px;
     }
 
     .card {
       margin: 40px auto;
-      max-width: 400px;
+      max-width: 420px;
       border: 1px solid rgba(255,255,255,0.2);
       padding: 20px;
+      letter-spacing: 2px;
     }
 
   </style>
@@ -73,29 +79,54 @@
 
   <div class="bg"></div>
 
+  <!-- HERO -->
   <div class="hero">
     <h1>VIA SANELLA</h1>
-    <p>AN UNREAL OBJECT / A PERFORMATIVE BRAND</p>
+    <div class="sub">A PERFORMATIVE BRAND / AN IMAGINARY STRUCTURE</div>
   </div>
 
+  <!-- MANIFESTO -->
   <div class="section">
-    <div class="manifesto">
-      “This is not fashion. This is not a collection.  
-      This is a temporary identity system built from illusion, memory, and absence.”
+    <div class="text">
+      Via Sanella is not a fashion brand.  
+      It is a performative act disguised as a label.
+
+      <br><br>
+
+      Created as a fictional system within contemporary fashion culture,  
+      it explores absurdity, repetition, and illusion inside the industry.
+
+      <br><br>
+
+      The project references The Fool from Tarot —  
+      a symbol of movement without certainty, creation without origin,  
+      and identity without stability.
     </div>
   </div>
 
+  <!-- COLLECTION -->
   <div class="section">
     <h2>COLLECTION I</h2>
 
     <div class="card">
-      <p>LOOK 01 — THE VOID DRESS</p>
+      LOOK 01 — THE FOOL RETURNS
     </div>
 
     <div class="card">
-      <p>LOOK 02 — DISAPPEARING FORM</p>
+      LOOK 02 — SYSTEM OF EMPTY SIGNIFIERS
     </div>
 
+    <div class="card">
+      LOOK 03 — RUNWAY WITHOUT AUDIENCE
+    </div>
+  </div>
+
+  <!-- FINAL NOTE -->
+  <div class="section">
+    <div class="text">
+      This project reflects on the absurd construction of meaning in fashion —  
+      where identity, value, and image are continuously performed, never fixed.
+    </div>
   </div>
 
 </body>
